@@ -21,10 +21,10 @@
 
             label = "Base";
             bindings = <
-  &kp ESC  &kp Q  &kp W      &kp E  &kp R           &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
-  &kp TAB  &kp A  &kp S      &kp D  &kp F           &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X      &kp C  &kp V           &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                         &kp LCTRL  &mo 1  &mt SPACE LGUI    &kp RET  &mo 2   &kp RALT
+  &kp ESC  &kp Q  &kp W      &kp E  &kp R               &kp T      &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
+  &kp TAB  &kp A  &kp S      &kp D  &kp F               &kp G      &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X      &kp C  &kp V               &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+                         &kp LCTRL  &mo 1  &mt LEFT_GUI SPACE    &kp RET  &mo 2   &kp RALT
             >;
         };
 
@@ -37,10 +37,10 @@
 
             label = "Lower";
             bindings = <
-  &kp ESC        &kp N1        &kp N2        &kp N3        &kp N4          &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-  &kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
-&kp LSHFT        &trans        &trans        &trans        &trans          &trans      &trans    &trans    &trans     &trans  &trans    &trans
-                                          &kp LCTRL        &trans  &mt SPACE LGUI     &kp RET    &trans  &kp RALT
+  &kp ESC        &kp N1        &kp N2        &kp N3        &kp N4              &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
+  &kp TAB  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3        &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
+&kp LSHFT        &trans        &trans        &trans        &trans              &trans      &trans    &trans    &trans     &trans  &trans    &trans
+                                          &kp LCTRL        &trans  &mt LEFT_GUI SPACE     &kp RET    &trans  &kp RALT
             >;
         };
 
@@ -56,7 +56,7 @@
   &kp ESC  &kp EXCL  &kp AT   &kp HASH  &kp DLLR           &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &kp BSPC
   &kp TAB    &trans  &trans     &trans    &trans              &trans    &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT    &trans  &trans     &trans    &trans              &trans    &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LCTRL    &trans  &mt SPACE LEFT_GUI      &kp RET     &trans         &kp RALT
+                             &kp LCTRL    &trans  &mt LEFT_GUI SPACE      &kp RET     &trans         &kp RALT
             >;
         };
     };
