@@ -81,10 +81,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &kp LA(LEFT_ARROW)      &kp LA(RIGHT)  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp LEFT           &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT))  &trans     &trans  &trans  &trans
-                        &trans  &trans  &trans                    &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &kp LA(LEFT_ARROW)              &kp LA(RIGHT)  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT                   &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LG(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &trans     &trans  &trans  &trans
+                        &trans  &trans  &trans                      &trans                     &trans  &trans
             >;
 
             label = "Nav";
