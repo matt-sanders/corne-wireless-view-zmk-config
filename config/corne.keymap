@@ -45,6 +45,26 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        shift_left_parenthesis: shift_left_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_LEFT_PARENTHESIS";
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        shift_right_parenthesis: shift_right_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_RIGHT_PARENTHESIS";
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -92,10 +112,10 @@
 
             label = "Symbols";
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)            &kp LS(N7)             &kp LS(N8)        &kp MINUS          &kp EQUAL     &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH      &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS             &kp EQUAL              &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
-                             &trans    &trans    &trans       &trans                &trans                 &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)               &kp LS(N7)                &kp LS(N8)        &none              &none         &trans
+&trans     &trans    &trans  &trans    &trans    &trans       &shift_left_parenthesis  &shift_right_parenthesis  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH      &trans
+&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS                &kp EQUAL                 &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
+                             &trans    &trans    &trans       &trans                   &trans                    &trans
             >;
         };
 
