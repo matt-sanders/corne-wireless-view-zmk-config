@@ -94,7 +94,7 @@
             bindings = <
 &kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)            &kp LS(N7)             &kp LS(N8)        &kp MINUS          &kp EQUAL     &trans
 &trans     &trans    &trans  &trans    &trans    &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH      &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
+&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS             &kp EQUAL              &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
                              &trans    &trans    &trans       &trans                &trans                 &trans
             >;
         };
