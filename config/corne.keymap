@@ -69,20 +69,22 @@
 &trans&trans          &trans            &trans      &trans             &trans             &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &trans
                                         &trans      &trans             &trans             &trans        &mo 3         &trans
             >;
+
+            label = "Numbers";
         };
 
-        raise_layer {
+        symbols_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            label = "Raise";
+            label = "Symbols";
             bindings = <
-&kp GRAVE&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)            &kp LS(N7)             &kp LS(N8)        &kp LEFT_PARENTHESIS  &kp MINUS     &kp EQUAL
-&trans   &trans    &trans  &trans    &trans    &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BSLH      &trans
-&trans   &trans    &trans  &trans    &trans    &trans       &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN      &kp QUESTION  &trans
+&kp GRAVE&kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)            &kp LS(N7)             &kp LS(N8)        &kp MINUS          &kp EQUAL     &trans
+&trans   &trans    &trans  &trans    &trans    &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSLH      &trans
+&trans   &trans    &trans  &trans    &trans    &trans       &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN   &kp QUESTION  &trans
                            &trans    &trans    &trans       &trans                &trans                 &trans
             >;
         };
