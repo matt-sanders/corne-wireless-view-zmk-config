@@ -50,26 +50,16 @@
             label = "SHIFT_LEFT_PARENTHESIS";
             bindings =
                 <&kp LEFT_PARENTHESIS>,
-                <&kp RIGHT_PARENTHESIS>;
+                <&kp LEFT_BRACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        shift_left_bracket: shift_left_bracket {
+        shift_right_parenthesis: shift_right_parenthesis {
             compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_LEFT_BRACKET";
+            label = "SHIFT_RIGHT_PARENTHESIS";
             bindings =
-                <&kp LEFT_BRACKET>,
-                <&kp RIGHT_BRACKET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        shift_left_brace: shift_left_brace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHIFT_LEFT_BRACE";
-            bindings =
-                <&kp LEFT_BRACE>,
+                <&kp RIGHT_PARENTHESIS>,
                 <&kp RIGHT_BRACE>;
 
             #binding-cells = <0>;
@@ -122,9 +112,9 @@
 
             label = "Symbols";
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)  &kp LS(N7)               &kp LS(N8)         &none                &none         &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS   &shift_left_parenthesis  &shift_left_brace  &shift_left_bracket  &kp BSLH      &trans
-&trans     &trans    &trans  &trans    &trans    &trans       &kp EQUAL   &none                    &kp LESS_THAN      &kp GREATER_THAN     &kp QUESTION  &trans
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp LS(N6)  &kp LS(N7)               &kp LS(N8)                &none             &none              &trans
+&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS   &shift_left_parenthesis  &shift_right_parenthesis  &kp LBKT          &kp RIGHT_BRACKET  &kp BSLH
+&trans     &trans    &trans  &trans    &trans    &trans       &kp EQUAL   &none                    &kp LESS_THAN             &kp GREATER_THAN  &kp QUESTION       &trans
                              &trans    &trans    &trans       &trans      &trans                   &trans
             >;
         };
